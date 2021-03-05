@@ -1,8 +1,8 @@
 import pyalpm
 from pyalpm import Handle
-from libtwirl.core.database import register_repos
 # TODO (POSSIBLY): wrap all in a single function for a frontend to use instead (and allow for changing root dir)
 handle = Handle("/", "/var/lib/pacman")
+from libtwirl.core.database import register_repos
   
 # Register synced repositories automatically for now
 # Preferred if a frontend does it themselves, see TODO below
